@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SUV Purchase Prediction</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <center>
+    <h1> MONKEY POX DISEASE </h1>
+    <form action="/predict" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="Patient_ID">Patient_ID</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="number" id="Patient_ID" name="Patient_ID" placeholder="Enter the Patient_ID">
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Systemic_Illnes">Systemic_Illnes</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="number" id="Systemic_Illnes" name="Systemic_Illnes" placeholder="Enter the Systemic_Illnes">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Rectal_pain">Rectal_pain</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="number" id="Rectal_pain" name="Rectal_pain" placeholder="Enter the Rectal_pain">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Sore_Throat">Sore_Throat</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="number" id="Sore_Throat" name="Sore_Throat" placeholder="Enter the Sore_Throat">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="penile_Oedema">penile_Oedema</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="number" id="penile_Oedema" name="penile_Oedema" placeholder="Enter the penile_Oedema">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Oral_Lesions">Oral_Lesions</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="number" id="Oral_Lesions" name="Oral_Lesions" placeholder="Enter the Oral_Lesions">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Solitary_Lesion">Solitary_Lesion</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="number" id="Solitary_Lesion" name="Solitary_Lesion" placeholder="Enter the Solitary_Lesion">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Swollen_Tonsils">Swollen_Tonsils</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="number" id="Swollen_Tonsils" name="Swollen_Tonsils" placeholder="Enter the Swollen_Tonsils">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="HIV_Infection">HIV_Infection</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="number" id="HIV_Infection" name="HIV_Infection" placeholder="Enter the HIV_Infection">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Sexually_Transmitted_Infection">Sexually_Transmitted_Infection</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="number" id="Sexually_Transmitted_Infection" name="Sexually_Transmitted_Infection" placeholder="Enter the Sexually_Transmitted_Infection">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="submit" value="Predict" id="submit">
+                </td>
+            </tr>
+        </table>
+        <p>Prediction : {{pred}}</p>
+    </form>
+    </center>
+</body>
+</html>
